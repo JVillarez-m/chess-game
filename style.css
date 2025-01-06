@@ -2,6 +2,7 @@ body {
     background-color: rgb(100, 95, 93);
 }
 
+p { font-weight: bold; font-family: Arial; font-size: 1.2rem;}
 
 #gameboard {
     width: 320px;
@@ -14,12 +15,25 @@ body {
 .square {
     height: 40px;
     width: 40px;
+    position: relative;
 }
 
 .square svg {
     height: 30px;
     width: 30px;
     margin: 5px;
+    position: relative;
+    z-index: -9;
+}
+
+path {
+    position: relative;
+    z-index: -10;
+}
+
+.piece {
+    position: relative;
+    z-index: 9;
 }
 
 .beige{
@@ -34,6 +48,6 @@ body {
     fill: black;
 }
 
-.grey {
+.white {
     fill: rgb(124, 121, 121);
 }
